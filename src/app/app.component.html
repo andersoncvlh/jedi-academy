@@ -1,4 +1,2 @@
 <jedi-header></jedi-header>
-<jedi-student [student]="luke" ></jedi-student>
-<jedi-student [student]="han" ></jedi-student>
-<jedi-student [student]="leia" ></jedi-student>
+<jedi-student *ngFor="let student of students" [student]="student" ></jedi-student>
